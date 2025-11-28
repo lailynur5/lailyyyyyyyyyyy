@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Asrama Putri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Absensi Kehadiran Asrama Putri</h2>
+
+        <form id="absenForm">
+            <label>Nama Member:</label>
+            <input type="text" id="nama" required placeholder="Masukkan nama member">
+
+            <label>Status Kehadiran:</label>
+            <select id="status">
+                <option value="Hadir">Hadir</option>
+                <option value="Izin">Izin</option>
+                <option value="Sakit">Sakit</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+
+            <button type="submit">Simpan Absensi</button>
+        </form>
+
+        <h3>Riwayat Absensi</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Status</th>
+                    <th>Tanggal</th>
+                </tr>
+            </thead>
+            <tbody id="tabelAbsensi"></tbody>
+        </table>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
